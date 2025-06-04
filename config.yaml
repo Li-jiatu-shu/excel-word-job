@@ -1,0 +1,21 @@
+# config.yaml
+# =============== 配置说明 ================
+# source_dir：Excel 文件所在文件夹（支持中文路径）
+# output_path：汇总文件保存路径
+# columns：需要提取的列及其别名（按优先级排列）
+# header_row：表头所在行号（Excel 中的行号）
+# ========================================
+
+# ✅ 正确路径写法（使用正斜杠）
+source_dir: "D:/zhefilexlex"
+output_path: "D:/输出/汇总结果.xlsx"
+
+# ✅ 正确列表格式（统一缩进2空格）
+columns:
+  - 学号: [student number, 学生编号, 学号]
+  - 姓名: [Name, 学生姓名, 姓名]
+  - 参加模块: [Participation in modules, 参加模块, 课程名称]
+  - 社会实践单位: [所在单位, 社会实践单位, 实践单位]
+
+# ✅ 正确数值格式
+header_row: 1  # 使用半角#号注释
